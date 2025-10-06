@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a365d;
+  --color-secondary: #d97706;
+  --color-accent: #fef3c7;
+  --color-dark: #1f2937;
+  --color-light: #6b7280;
+
+  --font-sans: 'Inter', sans-serif;
+}
+/* index.css or App.css */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+
+
+
+/* src/index.css */
+
+@keyframes bookSpin1 {
+  0%, 100% { transform: rotate(-15deg) translateY(0); }
+  50% { transform: rotate(-25deg) translateY(-10px); }
+}
+
+@keyframes bookSpin2 {
+  0%, 100% { transform: rotate(5deg) translateY(0); }
+  50% { transform: rotate(-5deg) translateY(-8px); }
+}
+
+@keyframes bookSpin3 {
+  0%, 100% { transform: rotate(25deg) translateY(0); }
+  50% { transform: rotate(35deg) translateY(-12px); }
+}
+
+.animate-bookSpin1 {
+  animation: bookSpin1 2s ease-in-out infinite;
+}
+
+.animate-bookSpin2 {
+  animation: bookSpin2 2s ease-in-out infinite;
+}
+
+.animate-bookSpin3 {
+  animation: bookSpin3 2s ease-in-out infinite;
+}
+
+
+
+/* styles/react-tabs-custom.css */
+.react-tabs__tab--selected {
+  background-color: #fef3c7 !important;
+  border-bottom: 2px solid #d97706 !important;
+  color: #d97706 !important;
+}
+
+.react-tabs__tab:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.react-tabs__tab-list {
+  margin: 0 !important;
+  border-bottom: none !important;
+}
