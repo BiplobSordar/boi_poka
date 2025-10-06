@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from "react-router-dom"; 
 import RootLayout from './pages/RootLayout'
 import Home from './pages/Home'
 import NotFoundPage from './pages/NotFound'
@@ -14,7 +14,7 @@ import SignUpPage from './pages/Signup'
 import BookDetailsPage from './pages/BookDetailsPage'
 
 
-export const Routes = createBrowserRouter([
+export const Routes = createHashRouter([
     {
         path: '/',
         element: <RootLayout />,
